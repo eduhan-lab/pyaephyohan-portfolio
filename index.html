@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Pyae Phyo Han | Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=JetBrains+Mono:wght@400;600;700&amp;family=Syne:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -636,516 +637,452 @@ footer{
   .skill-grid{grid-template-columns:1fr}
   .nav-badge{display:none}
 }
+
+/* Compact technical typography and accessibility refinements */
+.glitch-name{font-size:clamp(2.7rem,5vw,4.4rem);line-height:.98}
+h2{font-size:clamp(1.8rem,3vw,2.65rem);line-height:1.1}
+.hero-title-line{font-size:clamp(1rem,1.6vw,1.25rem);letter-spacing:.13em}
+.panel-company{font-size:1.35rem}.panel-role{font-size:1.15rem}
+.cn{font-size:1.3rem}.edu-school{font-size:clamp(1.5rem,2.8vw,2.2rem)}
+.hero{min-height:760px}.hero-left{padding-top:4rem;padding-bottom:4rem}
+.hero-desc{color:#d1d7eb}.panel-bullets li{color:#d1d7eb}
+.sec-sub,.panel-loc,.cd,.cc-lbl{color:#abb5ca}
+.nav-links a{color:#c1c8d9}
+@media(max-width:600px){.glitch-name{font-size:clamp(2.5rem,11vw,3.6rem)}.hero-left{padding:3rem 1.4rem}.hero-right{padding:1.4rem}.hero{min-height:auto}.hero-btns{flex-wrap:wrap}.wrap{padding:0 1.3rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-
 <!-- LAYERS -->
 <div class="halftone"></div>
 <div class="grain"></div>
 <div class="scanline"></div>
-
 <!-- NAV -->
 <nav>
-  <div class="nav-links">
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#certs">Certs</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <div class="nav-badge">SYSTEM ONLINE</div>
+<div class="nav-links">
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#certs">Certs</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+<div class="nav-badge">SYSTEM ONLINE</div>
 </nav>
-
 <!-- ══ HERO ══ -->
 <div class="hero" style="position:relative;z-index:2">
-
-  <!-- WEB SVG -->
-  <svg class="web-deco" width="180" height="180" viewBox="0 0 180 180" fill="none" style="position:absolute;top:3rem;right:3rem;z-index:1">
-    <g stroke="rgba(0,247,255,1)" stroke-width="0.6">
-      <line x1="90" y1="0" x2="90" y2="180"/>
-      <line x1="0" y1="90" x2="180" y2="90"/>
-      <line x1="15" y1="15" x2="165" y2="165"/>
-      <line x1="165" y1="15" x2="15" y2="165"/>
-      <line x1="5" y1="47" x2="175" y2="133"/>
-      <line x1="5" y1="133" x2="175" y2="47"/>
-      <circle cx="90" cy="90" r="25"/>
-      <circle cx="90" cy="90" r="52"/>
-      <circle cx="90" cy="90" r="80"/>
-    </g>
-  </svg>
-
-  <div class="hero-left">
-    <div class="hero-eyebrow">identity.conf — authenticated</div>
-
-    <div class="name-block">
-      <span class="glitch-name" data-t="PYAE">PYAE</span>
-      <span class="glitch-name" data-t="PHYO">PHYO</span>
-      <span class="glitch-name" data-t="HAN">HAN</span>
-    </div>
-
-    <div class="hero-title-line">// IT Support &nbsp;·&nbsp; Systems Engineer &nbsp;·&nbsp; Cloud Admin</div>
-
-    <p class="hero-desc">
-      <span class="c">root@pph:~$</span> whoami<br>
-      IT professional with <span class="y">7+ years</span> across cloud, enterprise<br>
-      infrastructure &amp; multi-OS environments.<br>
-      <span class="c">Location:</span> Queens, NY &nbsp;|&nbsp; <span class="g">Status: AVAILABLE</span>
-    </p>
-
-    <div class="hero-tags">
-      <div class="hero-tag">Linux</div>
-      <div class="hero-tag">Microsoft Azure</div>
-      <div class="hero-tag">Windows Server</div>
-      <div class="hero-tag">Security Ops</div>
-      <div class="hero-tag">Network+</div>
-      <div class="hero-tag">Active Directory</div>
-    </div>
-
-    <div class="hero-btns">
-      <a href="#contact" class="btn-main">CONNECT NOW</a>
-      <a href="#experience" class="btn-outline">VIEW RESUME</a>
-    </div>
-  </div>
-
-  <div class="hero-right">
-    <!-- TERMINAL -->
-    <div class="terminal">
-      <div class="term-bar">
-        <div class="tdot" style="background:#ff5f57"></div>
-        <div class="tdot" style="background:#ffbd2e"></div>
-        <div class="tdot" style="background:#28c840"></div>
-        <span class="term-title">pph@portfolio — ~/profile.sh</span>
-      </div>
-      <div class="term-body">
-        <div class="tl">
-          <span class="tp">pph@portfolio:~$</span><span class="tc"> cat identity.json</span>
-          <div class="to">
-            {<br>
-            &nbsp;<span class="y">"name"</span>: <span class="w">"Pyae Phyo Han"</span>,<br>
-            &nbsp;<span class="y">"role"</span>: <span class="w">"Systems Engineer"</span>,<br>
-            &nbsp;<span class="y">"base"</span>: <span class="w">"Queens, NY 11373"</span>,<br>
-            &nbsp;<span class="y">"xp"</span>: <span class="p">7</span>,<br>
-            &nbsp;<span class="y">"status"</span>: <span class="g">"AVAILABLE"</span><br>
+<!-- WEB SVG -->
+<svg class="web-deco" fill="none" height="180" style="position:absolute;top:3rem;right:3rem;z-index:1" viewbox="0 0 180 180" width="180">
+<g stroke="rgba(0,247,255,1)" stroke-width="0.6">
+<line x1="90" x2="90" y1="0" y2="180"></line>
+<line x1="0" x2="180" y1="90" y2="90"></line>
+<line x1="15" x2="165" y1="15" y2="165"></line>
+<line x1="165" x2="15" y1="15" y2="165"></line>
+<line x1="5" x2="175" y1="47" y2="133"></line>
+<line x1="5" x2="175" y1="133" y2="47"></line>
+<circle cx="90" cy="90" r="25"></circle>
+<circle cx="90" cy="90" r="52"></circle>
+<circle cx="90" cy="90" r="80"></circle>
+</g>
+</svg>
+<div class="hero-left">
+<div class="hero-eyebrow">identity.conf — authenticated</div>
+<div class="name-block">
+<span class="glitch-name" data-t="PYAE">PYAE</span>
+<span class="glitch-name" data-t="PHYO">PHYO</span>
+<span class="glitch-name" data-t="HAN">HAN</span>
+</div>
+<div class="hero-title-line">// IT Support  ·  Systems Engineer  ·  Cloud Admin</div>
+<p class="hero-desc">
+<span class="c">root@pph:~$</span> whoami<br/>
+      IT professional with <span class="y">7+ years</span> across cloud, enterprise<br/>
+      infrastructure &amp; multi-OS environments.<br/>
+<span class="g">Status: AVAILABLE</span>
+</p>
+<div class="hero-tags">
+<div class="hero-tag">Linux</div>
+<div class="hero-tag">Microsoft Azure</div>
+<div class="hero-tag">Windows Server</div>
+<div class="hero-tag">Security Ops</div>
+<div class="hero-tag">Network+</div>
+<div class="hero-tag">Active Directory</div>
+</div>
+<div class="hero-btns">
+<a class="btn-main" href="#contact">CONNECT NOW</a>
+<a class="btn-outline" href="#experience">VIEW RESUME</a>
+</div>
+</div>
+<div class="hero-right">
+<!-- TERMINAL -->
+<div class="terminal">
+<div class="term-bar">
+<div class="tdot" style="background:#ff5f57"></div>
+<div class="tdot" style="background:#ffbd2e"></div>
+<div class="tdot" style="background:#28c840"></div>
+<span class="term-title">pph@portfolio — ~/profile.sh</span>
+</div>
+<div class="term-body">
+<div class="tl">
+<span class="tp">pph@portfolio:~$</span><span class="tc"> cat identity.json</span>
+<div class="to">
+            {<br/>
+             <span class="y">"name"</span>: <span class="w">"Pyae Phyo Han"</span>,<br/>
+             <span class="y">"role"</span>: <span class="w">"Systems Engineer"</span>,<br/>
+             <span class="y">"xp"</span>: <span class="p">7</span>,<br/>
+             <span class="y">"status"</span>: <span class="g">"AVAILABLE"</span><br/>
             }
           </div>
-        </div>
-        <div class="tl">
-          <span class="tp">pph@portfolio:~$</span><span class="tc"> ls certs/</span>
-          <div class="to">
-            <span class="p">MCSE_2016</span>&nbsp;&nbsp;<span class="p">AZ-104</span>&nbsp;&nbsp;<span class="p">SecOps</span>&nbsp;&nbsp;<span class="p">Net+</span>
-          </div>
-        </div>
-        <div class="tl">
-          <span class="tp">pph@portfolio:~$</span><span class="tc"> systemctl status career</span>
-          <div class="to">
-            ● career.service — <span class="g">active (running)</span><br>
-            &nbsp;&nbsp;Main PID: <span class="y">7+years</span><br>
-            &nbsp;&nbsp;Current: <span class="w">BMCC · CUNY — Nov 2025–Present</span><br>
-            &nbsp;&nbsp;Location: <span class="w">New York City, NY</span>
-          </div>
-        </div>
-        <div class="tl">
-          <span class="tp">pph@portfolio:~$</span><span class="tc"> ping career.pyaephyohan@gmail.com</span>
-          <div class="to">
-            <span class="g">64 bytes from gmail: ttl=255 time=1ms</span><br>
-            <span class="g">64 bytes from gmail: ttl=255 time=1ms</span>
-          </div>
-        </div>
-        <div class="tl">
-          <span class="tp">pph@portfolio:~$</span> <span class="tcursor"></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONTACT STRIP -->
-    <div class="contact-strip">
-      <div class="cstrip-item">
-        <span class="cstrip-icon">✉</span>
-        <span class="cstrip-label">EMAIL</span>
-        <span class="cstrip-val"><a href="mailto:career.pyaephyohan@gmail.com">career.pyaephyohan@gmail.com</a></span>
-      </div>
-      <div class="cstrip-item">
-        <span class="cstrip-icon">☎</span>
-        <span class="cstrip-label">PHONE</span>
-        <span class="cstrip-val">+1 (929) 919-3097</span>
-      </div>
-      <div class="cstrip-item">
-        <span class="cstrip-icon">◎</span>
-        <span class="cstrip-label">LOC</span>
-        <span class="cstrip-val">Queens, New York 11373</span>
-      </div>
-    </div>
-  </div>
+</div>
+<div class="tl">
+<span class="tp">pph@portfolio:~$</span><span class="tc"> ls certs/</span>
+<div class="to">
+<span class="p">MCSE_2016</span>  <span class="p">AZ-104</span>  <span class="p">SecOps</span>  <span class="p">Net+</span>
+</div>
+</div>
+<div class="tl">
+<span class="tp">pph@portfolio:~$</span><span class="tc"> systemctl status career</span>
+<div class="to">
+            ● career.service — <span class="g">active (running)</span><br/>
+              Main PID: <span class="y">7+years</span><br/>
+              Current: <span class="w">BMCC · CUNY — Nov 2025–Present</span><br/>
+              Location: <span class="w">New York City, NY</span>
+</div>
+</div>
+<div class="tl">
+<span class="tp">pph@portfolio:~$</span><span class="tc"> ping career.pyaephyohan@gmail.com</span>
+<div class="to">
+<span class="g">64 bytes from gmail: ttl=255 time=1ms</span><br/>
+<span class="g">64 bytes from gmail: ttl=255 time=1ms</span>
+</div>
+</div>
+<div class="tl">
+<span class="tp">pph@portfolio:~$</span> <span class="tcursor"></span>
+</div>
+</div>
+</div>
+<!-- CONTACT STRIP -->
+<div class="contact-strip">
+<div class="cstrip-item">
+<span class="cstrip-icon">✉</span>
+<span class="cstrip-label">EMAIL</span>
+<span class="cstrip-val"><a href="mailto:career.pyaephyohan@gmail.com">career.pyaephyohan@gmail.com</a></span>
 </div>
 
+
+</div>
+</div>
+</div>
 <!-- STATS -->
 <div class="stats" style="position:relative;z-index:2">
-  <div class="stat"><div class="stat-n">7+</div><div class="stat-l">Years XP</div></div>
-  <div class="stat"><div class="stat-n">04</div><div class="stat-l">MS Certs</div></div>
-  <div class="stat"><div class="stat-n">04</div><div class="stat-l">Companies</div></div>
-  <div class="stat"><div class="stat-n">3×</div><div class="stat-l">OS Platforms</div></div>
+<div class="stat"><div class="stat-n">7+</div><div class="stat-l">Years XP</div></div>
+<div class="stat"><div class="stat-n">04</div><div class="stat-l">MS Certs</div></div>
+<div class="stat"><div class="stat-n">04</div><div class="stat-l">Companies</div></div>
+<div class="stat"><div class="stat-n">3×</div><div class="stat-l">OS Platforms</div></div>
 </div>
-
 <!-- EXPERIENCE -->
 <section class="sec" id="experience">
-  <div class="wrap">
-    <div class="sec-header">
-      <div class="sec-eyebrow">// WORK HISTORY</div>
-      <h2>Experience</h2>
-      <p class="sec-sub">Four companies. Four roles. One engineer.</p>
-    </div>
-    <div class="panels-wrap">
-
-      <!-- Panel 1 -->
-      <div class="panel">
-        <div class="onoma">2025</div>
-        <div class="panel-stripe stripe-red"></div>
-        <div class="panel-head">
-          <span class="panel-role">IT Support Assistant</span>
-          <span class="panel-period pp-bmcc">2025 – PRESENT</span>
-        </div>
-        <div class="panel-body">
-          <div class="panel-company pc-bmcc">BMCC · CUNY</div>
-          <div class="panel-loc">📅 Nov 2025 – Present &nbsp;·&nbsp; 📍 New York City, NY</div>
-          <ul class="panel-bullets li-red">
-            <li>Microsoft Account, MFA &amp; email security for students and staff</li>
-            <li>Full MS365 suite support, deployment &amp; troubleshooting</li>
-            <li>Service request ticket creation via institutional ITSM</li>
-            <li>Azure Active Directory identity &amp; access management</li>
-          </ul>
-          <div class="panel-skills">
-            <span class="ps ps-red">Azure AD</span>
-            <span class="ps ps-red">MS365</span>
-            <span class="ps ps-red">ITSM</span>
-            <span class="ps ps-red">MFA</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel 2 -->
-      <div class="panel">
-        <div class="onoma">2020</div>
-        <div class="panel-stripe stripe-cyan"></div>
-        <div class="panel-head">
-          <span class="panel-role">System Engineer</span>
-          <span class="panel-period pp-myanmar">2020–22</span>
-        </div>
-        <div class="panel-body">
-          <div class="panel-company pc-myanmar">Myanmar Info Tech</div>
-          <div class="panel-loc">📅 Dec 2020 – Apr 2022 &nbsp;·&nbsp; 📍 Yangon, Myanmar</div>
-          <ul class="panel-bullets li-cyan">
-            <li>Resolved system issues across macOS, Linux &amp; Windows</li>
-            <li>User training sessions &amp; technical documentation</li>
-            <li>System enhancements with dev team collaboration</li>
-            <li>Monitoring, OS updates &amp; patch management</li>
-          </ul>
-          <div class="panel-skills">
-            <span class="ps ps-cyan">Linux</span>
-            <span class="ps ps-cyan">Windows</span>
-            <span class="ps ps-cyan">macOS</span>
-            <span class="ps ps-cyan">Patching</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel 3 -->
-      <div class="panel">
-        <div class="onoma">2019</div>
-        <div class="panel-stripe stripe-purple"></div>
-        <div class="panel-head">
-          <span class="panel-role">System Engineer</span>
-          <span class="panel-period pp-ntt">2019–20</span>
-        </div>
-        <div class="panel-body">
-          <div class="panel-company pc-ntt">NTT Data Myanmar</div>
-          <div class="panel-loc">📅 Sep 2019 – Dec 2020 &nbsp;·&nbsp; 📍 Yangon, Myanmar</div>
-          <ul class="panel-bullets li-purple">
-            <li>Authored guides &amp; FAQs for non-technical users</li>
-            <li>IT support &amp; client project task coordination</li>
-            <li>Hardware upgrades maintaining minimal downtime</li>
-            <li>Vendor &amp; technical team coordination</li>
-          </ul>
-          <div class="panel-skills">
-            <span class="ps ps-purple">Infrastructure</span>
-            <span class="ps ps-purple">Networking</span>
-            <span class="ps ps-purple">Vendor Mgmt</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel 4 -->
-      <div class="panel">
-        <div class="onoma">2017</div>
-        <div class="panel-stripe stripe-yellow"></div>
-        <div class="panel-head">
-          <span class="panel-role">IT Officer</span>
-          <span class="panel-period pp-kbz">2017–19</span>
-        </div>
-        <div class="panel-body">
-          <div class="panel-company pc-yellow">Air KBZ &amp; MAI</div>
-          <div class="panel-loc">📅 Jun 2017 – Sep 2019 &nbsp;·&nbsp; 📍 Yangon, Myanmar</div>
-          <ul class="panel-bullets li-yellow">
-            <li>Hardware, software &amp; network support org-wide</li>
-            <li>Data backup &amp; disaster recovery implementation</li>
-            <li>Vendor relations &amp; equipment procurement</li>
-          </ul>
-          <div class="panel-skills">
-            <span class="ps ps-yellow">Networking</span>
-            <span class="ps ps-yellow">Backup &amp; DR</span>
-            <span class="ps ps-yellow">Procurement</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-header">
+<div class="sec-eyebrow">// WORK HISTORY</div>
+<h2>Experience</h2>
+<p class="sec-sub">Four companies. Four roles. One engineer.</p>
+</div>
+<div class="panels-wrap">
+<!-- Panel 1 -->
+<div class="panel">
+<div class="onoma">2025</div>
+<div class="panel-stripe stripe-red"></div>
+<div class="panel-head">
+<span class="panel-role">IT Support Assistant</span>
+<span class="panel-period pp-bmcc">2025 – PRESENT</span>
+</div>
+<div class="panel-body">
+<div class="panel-company pc-bmcc">BMCC · CUNY</div>
+<div class="panel-loc">📅 Nov 2025 – Present  ·  📍 New York City, NY</div>
+<ul class="panel-bullets li-red">
+<li>Microsoft Account, MFA &amp; email security for students and staff</li>
+<li>Full MS365 suite support, deployment &amp; troubleshooting</li>
+<li>Service request ticket creation via institutional ITSM</li>
+<li>Azure Active Directory identity &amp; access management</li>
+</ul>
+</div>
+</div>
+<!-- Panel 2 -->
+<div class="panel">
+<div class="onoma">2020</div>
+<div class="panel-stripe stripe-cyan"></div>
+<div class="panel-head">
+<span class="panel-role">System Engineer</span>
+<span class="panel-period pp-myanmar">2020–22</span>
+</div>
+<div class="panel-body">
+<div class="panel-company pc-myanmar">Myanmar Info Tech</div>
+<div class="panel-loc">📅 Dec 2020 – Apr 2022  ·  📍 Yangon, Myanmar</div>
+<ul class="panel-bullets li-cyan">
+<li>Resolved system issues across macOS, Linux &amp; Windows</li>
+<li>User training sessions &amp; technical documentation</li>
+<li>System enhancements with dev team collaboration</li>
+<li>Monitoring, OS updates &amp; patch management</li>
+</ul>
+</div>
+</div>
+<!-- Panel 3 -->
+<div class="panel">
+<div class="onoma">2019</div>
+<div class="panel-stripe stripe-purple"></div>
+<div class="panel-head">
+<span class="panel-role">System Engineer</span>
+<span class="panel-period pp-ntt">2019–20</span>
+</div>
+<div class="panel-body">
+<div class="panel-company pc-ntt">NTT Data Myanmar</div>
+<div class="panel-loc">📅 Sep 2019 – Dec 2020  ·  📍 Yangon, Myanmar</div>
+<ul class="panel-bullets li-purple">
+<li>Authored guides &amp; FAQs for non-technical users</li>
+<li>IT support &amp; client project task coordination</li>
+<li>Hardware upgrades maintaining minimal downtime</li>
+<li>Vendor &amp; technical team coordination</li>
+</ul>
+</div>
+</div>
+<!-- Panel 4 -->
+<div class="panel">
+<div class="onoma">2017</div>
+<div class="panel-stripe stripe-yellow"></div>
+<div class="panel-head">
+<span class="panel-role">IT Officer</span>
+<span class="panel-period pp-kbz">2017–19</span>
+</div>
+<div class="panel-body">
+<div class="panel-company pc-yellow">Air KBZ &amp; MAI</div>
+<div class="panel-loc">📅 Jun 2017 – Sep 2019  ·  📍 Yangon, Myanmar</div>
+<ul class="panel-bullets li-yellow">
+<li>Hardware, software &amp; network support org-wide</li>
+<li>Data backup &amp; disaster recovery implementation</li>
+<li>Vendor relations &amp; equipment procurement</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- SKILLS -->
 <section class="sec" id="skills">
-  <div class="wrap">
-    <div class="sec-header">
-      <div class="sec-eyebrow">// TECHNICAL SKILLS</div>
-      <h2>Technical Skills</h2>
-      <p class="sec-sub">Full stack of technical expertise. All systems go.</p>
-    </div>
-    <div class="skill-grid">
-
-      <div class="skill-term">
-        <div class="st-bar">
-          <div class="tdot" style="background:#ff5f57"></div>
-          <div class="tdot" style="background:#ffbd2e"></div>
-          <div class="tdot" style="background:#28c840"></div>
-          <span class="stitle">cloud_identity.sh</span>
-        </div>
-        <div class="st-body">
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">AZURE</span><span class="sk-s">=</span><span class="sk-v">Administrator AZ-104</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">AZURE_AD</span><span class="sk-s">=</span><span class="sk-v">Identity &amp; Access</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">MS365</span><span class="sk-s">=</span><span class="sk-v">Full Suite Admin</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">EXCHANGE</span><span class="sk-s">=</span><span class="sk-v">Online Config</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">MFA</span><span class="sk-s">=</span><span class="sk-v">Multi-Factor Auth</span></div>
-        </div>
-      </div>
-
-      <div class="skill-term">
-        <div class="st-bar">
-          <div class="tdot" style="background:#ff5f57"></div>
-          <div class="tdot" style="background:#ffbd2e"></div>
-          <div class="tdot" style="background:#28c840"></div>
-          <span class="stitle">systems.cfg</span>
-        </div>
-        <div class="st-body">
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">WIN_SERVER</span><span class="sk-s">=</span><span class="sk-v">MCSE 2016</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">LINUX</span><span class="sk-s">=</span><span class="sk-v">Admin &amp; Support</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">MACOS</span><span class="sk-s">=</span><span class="sk-v">Administration</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">ACTIVE_DIR</span><span class="sk-s">=</span><span class="sk-v">Group Policy</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">VIRT</span><span class="sk-s">=</span><span class="sk-v">Virtualization</span></div>
-        </div>
-      </div>
-
-      <div class="skill-term">
-        <div class="st-bar">
-          <div class="tdot" style="background:#ff5f57"></div>
-          <div class="tdot" style="background:#ffbd2e"></div>
-          <div class="tdot" style="background:#28c840"></div>
-          <span class="stitle">security.conf</span>
-        </div>
-        <div class="st-body">
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">NETWORK+</span><span class="sk-s">=</span><span class="sk-v">CompTIA Cert</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">SIEM</span><span class="sk-s">=</span><span class="sk-v">MS Sentinel</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">FIREWALL</span><span class="sk-s">=</span><span class="sk-v">Config &amp; Rules</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">VPN</span><span class="sk-s">=</span><span class="sk-v">Setup &amp; Mgmt</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">INCIDENT_RSP</span><span class="sk-s">=</span><span class="sk-v">Active</span></div>
-        </div>
-      </div>
-
-      <div class="skill-term">
-        <div class="st-bar">
-          <div class="tdot" style="background:#ff5f57"></div>
-          <div class="tdot" style="background:#ffbd2e"></div>
-          <div class="tdot" style="background:#28c840"></div>
-          <span class="stitle">support.log</span>
-        </div>
-        <div class="st-body">
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">ITSM</span><span class="sk-s">=</span><span class="sk-v">Ticketing Systems</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">HELPDESK</span><span class="sk-s">=</span><span class="sk-v">L1 / L2 Support</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">SLA</span><span class="sk-s">=</span><span class="sk-v">Management</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">TRAINING</span><span class="sk-s">=</span><span class="sk-v">User Enablement</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">DOCS</span><span class="sk-s">=</span><span class="sk-v">Technical Writing</span></div>
-        </div>
-      </div>
-
-      <div class="skill-term">
-        <div class="st-bar">
-          <div class="tdot" style="background:#ff5f57"></div>
-          <div class="tdot" style="background:#ffbd2e"></div>
-          <div class="tdot" style="background:#28c840"></div>
-          <span class="stitle">infra.yml</span>
-        </div>
-        <div class="st-body">
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">HARDWARE</span><span class="sk-s">=</span><span class="sk-v">Upgrades &amp; Repair</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">PATCHING</span><span class="sk-s">=</span><span class="sk-v">OS &amp; App Updates</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">BACKUP</span><span class="sk-s">=</span><span class="sk-v">Recovery Solutions</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">VENDOR</span><span class="sk-s">=</span><span class="sk-v">Procurement Mgmt</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">UPTIME</span><span class="sk-s">=</span><span class="sk-v">Monitoring</span></div>
-        </div>
-      </div>
-
-      <div class="skill-term">
-        <div class="st-bar">
-          <div class="tdot" style="background:#ff5f57"></div>
-          <div class="tdot" style="background:#ffbd2e"></div>
-          <div class="tdot" style="background:#28c840"></div>
-          <span class="stitle">soft_skills.exe</span>
-        </div>
-        <div class="st-body">
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">COLLAB</span><span class="sk-s">=</span><span class="sk-v">Cross-team Work</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">CLIENT_REL</span><span class="sk-s">=</span><span class="sk-v">Stakeholder Mgmt</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">WRITING</span><span class="sk-s">=</span><span class="sk-v">Technical Docs</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">COORD</span><span class="sk-s">=</span><span class="sk-v">Project Support</span></div>
-          <div class="sk-row"><span class="sk-p">$</span><span class="sk-k">PROBLEM_SOLVE</span><span class="sk-s">=</span><span class="sk-v">Critical Thinking</span></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-header">
+<div class="sec-eyebrow">// TECHNICAL SKILLS</div>
+<h2>Technical Skills</h2>
+<p class="sec-sub">Full stack of technical expertise. All systems go.</p>
+</div>
+<div class="skill-grid">
+<div class="skill-term">
+<div class="st-bar">
+<div class="tdot" style="background:#ff5f57"></div>
+<div class="tdot" style="background:#ffbd2e"></div>
+<div class="tdot" style="background:#28c840"></div>
+<span class="stitle">cloud_identity.sh</span>
+</div>
+<div class="st-body">
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">AZURE</span><span class="sk-s">=</span><span class="sk-v">Administrator AZ-104</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">AZURE_AD</span><span class="sk-s">=</span><span class="sk-v">Identity &amp; Access</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">MS365</span><span class="sk-s">=</span><span class="sk-v">Full Suite Admin</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">EXCHANGE</span><span class="sk-s">=</span><span class="sk-v">Online Config</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">MFA</span><span class="sk-s">=</span><span class="sk-v">Multi-Factor Auth</span></div>
+</div>
+</div>
+<div class="skill-term">
+<div class="st-bar">
+<div class="tdot" style="background:#ff5f57"></div>
+<div class="tdot" style="background:#ffbd2e"></div>
+<div class="tdot" style="background:#28c840"></div>
+<span class="stitle">systems.cfg</span>
+</div>
+<div class="st-body">
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">WIN_SERVER</span><span class="sk-s">=</span><span class="sk-v">MCSE 2016</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">LINUX</span><span class="sk-s">=</span><span class="sk-v">Admin &amp; Support</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">MACOS</span><span class="sk-s">=</span><span class="sk-v">Administration</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">ACTIVE_DIR</span><span class="sk-s">=</span><span class="sk-v">Group Policy</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">VIRT</span><span class="sk-s">=</span><span class="sk-v">Virtualization</span></div>
+</div>
+</div>
+<div class="skill-term">
+<div class="st-bar">
+<div class="tdot" style="background:#ff5f57"></div>
+<div class="tdot" style="background:#ffbd2e"></div>
+<div class="tdot" style="background:#28c840"></div>
+<span class="stitle">security.conf</span>
+</div>
+<div class="st-body">
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">NETWORK+</span><span class="sk-s">=</span><span class="sk-v">CompTIA Cert</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">SIEM</span><span class="sk-s">=</span><span class="sk-v">MS Sentinel</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">FIREWALL</span><span class="sk-s">=</span><span class="sk-v">Config &amp; Rules</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">VPN</span><span class="sk-s">=</span><span class="sk-v">Setup &amp; Mgmt</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">INCIDENT_RSP</span><span class="sk-s">=</span><span class="sk-v">Active</span></div>
+</div>
+</div>
+<div class="skill-term">
+<div class="st-bar">
+<div class="tdot" style="background:#ff5f57"></div>
+<div class="tdot" style="background:#ffbd2e"></div>
+<div class="tdot" style="background:#28c840"></div>
+<span class="stitle">support.log</span>
+</div>
+<div class="st-body">
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">ITSM</span><span class="sk-s">=</span><span class="sk-v">Ticketing Systems</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">HELPDESK</span><span class="sk-s">=</span><span class="sk-v">L1 / L2 Support</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">SLA</span><span class="sk-s">=</span><span class="sk-v">Management</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">TRAINING</span><span class="sk-s">=</span><span class="sk-v">User Enablement</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">DOCS</span><span class="sk-s">=</span><span class="sk-v">Technical Writing</span></div>
+</div>
+</div>
+<div class="skill-term">
+<div class="st-bar">
+<div class="tdot" style="background:#ff5f57"></div>
+<div class="tdot" style="background:#ffbd2e"></div>
+<div class="tdot" style="background:#28c840"></div>
+<span class="stitle">infra.yml</span>
+</div>
+<div class="st-body">
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">HARDWARE</span><span class="sk-s">=</span><span class="sk-v">Upgrades &amp; Repair</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">PATCHING</span><span class="sk-s">=</span><span class="sk-v">OS &amp; App Updates</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">BACKUP</span><span class="sk-s">=</span><span class="sk-v">Recovery Solutions</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">VENDOR</span><span class="sk-s">=</span><span class="sk-v">Procurement Mgmt</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">UPTIME</span><span class="sk-s">=</span><span class="sk-v">Monitoring</span></div>
+</div>
+</div>
+<div class="skill-term">
+<div class="st-bar">
+<div class="tdot" style="background:#ff5f57"></div>
+<div class="tdot" style="background:#ffbd2e"></div>
+<div class="tdot" style="background:#28c840"></div>
+<span class="stitle">soft_skills.exe</span>
+</div>
+<div class="st-body">
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">COLLAB</span><span class="sk-s">=</span><span class="sk-v">Cross-team Work</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">CLIENT_REL</span><span class="sk-s">=</span><span class="sk-v">Stakeholder Mgmt</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">WRITING</span><span class="sk-s">=</span><span class="sk-v">Technical Docs</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">COORD</span><span class="sk-s">=</span><span class="sk-v">Project Support</span></div>
+<div class="sk-row"><span class="sk-p">$</span><span class="sk-k">PROBLEM_SOLVE</span><span class="sk-s">=</span><span class="sk-v">Critical Thinking</span></div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- CERTIFICATIONS -->
 <section class="sec" id="certs">
-  <div class="wrap">
-    <div class="sec-header">
-      <div class="sec-eyebrow">// CREDENTIALS</div>
-      <h2>Certifications</h2>
-      <p class="sec-sub">Industry credentials across the Microsoft &amp; CompTIA ecosystem.</p>
-    </div>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <div class="cert-num">01</div>
-        <div>
-          <div class="cv">// MICROSOFT</div>
-          <div class="cn">MCSE — Microsoft Server 2016</div>
-          <div class="cd">Enterprise Windows Server 2016 administration, configuration, and full lifecycle management across server environments.</div>
-        </div>
-        <div class="cert-badge-icon">★</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-num">02</div>
-        <div>
-          <div class="cv">// MICROSOFT · AZ-104</div>
-          <div class="cn">Azure Administrator Associate</div>
-          <div class="cd">Certified in Azure subscriptions, IAM, storage, compute, and virtual networking across Microsoft cloud infrastructure.</div>
-        </div>
-        <div class="cert-badge-icon">☁</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-num">03</div>
-        <div>
-          <div class="cv">// MICROSOFT SECURITY</div>
-          <div class="cn">Security Operations Analyst Associate</div>
-          <div class="cd">Threat investigation, incident response, and security monitoring with Microsoft Sentinel and Defender for Endpoint.</div>
-        </div>
-        <div class="cert-badge-icon">🛡</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-num">04</div>
-        <div>
-          <div class="cv">// COMPTIA</div>
-          <div class="cn">CompTIA Network+</div>
-          <div class="cd">Networking fundamentals, infrastructure design, troubleshooting, operations, and network security best practices.</div>
-        </div>
-        <div class="cert-badge-icon">🌐</div>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-header">
+<div class="sec-eyebrow">// CREDENTIALS</div>
+<h2>Certifications</h2>
+<p class="sec-sub">Industry credentials across the Microsoft &amp; CompTIA ecosystem.</p>
+</div>
+<div class="cert-grid">
+<div class="cert-card">
+<div class="cert-num">01</div>
+<div>
+<div class="cv">// MICROSOFT</div>
+<div class="cn">MCSE — Microsoft Server 2016</div>
+<div class="cd">Enterprise Windows Server 2016 administration, configuration, and full lifecycle management across server environments.</div>
+</div>
+<div class="cert-badge-icon">★</div>
+</div>
+<div class="cert-card">
+<div class="cert-num">02</div>
+<div>
+<div class="cv">// MICROSOFT · AZ-104</div>
+<div class="cn">Azure Administrator Associate</div>
+<div class="cd">Certified in Azure subscriptions, IAM, storage, compute, and virtual networking across Microsoft cloud infrastructure.</div>
+</div>
+<div class="cert-badge-icon">☁</div>
+</div>
+<div class="cert-card">
+<div class="cert-num">03</div>
+<div>
+<div class="cv">// MICROSOFT SECURITY</div>
+<div class="cn">Security Operations Analyst Associate</div>
+<div class="cd">Threat investigation, incident response, and security monitoring with Microsoft Sentinel and Defender for Endpoint.</div>
+</div>
+<div class="cert-badge-icon">🛡</div>
+</div>
+<div class="cert-card">
+<div class="cert-num">04</div>
+<div>
+<div class="cv">// COMPTIA</div>
+<div class="cn">CompTIA Network+</div>
+<div class="cd">Networking fundamentals, infrastructure design, troubleshooting, operations, and network security best practices.</div>
+</div>
+<div class="cert-badge-icon">🌐</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- EDUCATION -->
 <section class="sec" id="education">
-  <div class="wrap">
-    <div class="sec-header">
-      <div class="sec-eyebrow">// EDUCATION</div>
-      <h2>Education</h2>
-      <p class="sec-sub" style="margin-bottom:2.5rem">Building on a strong academic foundation.</p>
-    </div>
-    <div class="edu-wrap">
-      <div>
-        <div class="edu-chips">
-          <span class="edu-chip">CUNY System</span>
-          <span class="edu-chip">New York, NY</span>
-          <span class="edu-chip">Active</span>
-        </div>
-        <div class="edu-school">Borough of Manhattan<br>Community College</div>
-        <div class="edu-uni">// The City University of New York</div>
-      </div>
-      <div class="edu-hex">
-        <div class="edu-hex-main">CUNY</div>
-        <div class="edu-hex-sub">BMCC</div>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-header">
+<div class="sec-eyebrow">// EDUCATION</div>
+<h2>Education</h2>
+<p class="sec-sub" style="margin-bottom:2.5rem">Building on a strong academic foundation.</p>
+</div>
+<div class="edu-wrap">
+<div>
+<div class="edu-chips">
+<span class="edu-chip">CUNY System</span>
+<span class="edu-chip">Active</span>
+</div>
+<div class="edu-school">Borough of Manhattan<br/>Community College</div>
+<div class="edu-uni">// The City University of New York</div>
+</div>
+<div class="edu-hex">
+<div class="edu-hex-main">CUNY</div>
+<div class="edu-hex-sub">BMCC</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- CONTACT -->
 <section class="sec" id="contact">
-  <div class="wrap">
-    <div class="sec-header">
-      <div class="sec-eyebrow">// OPEN CHANNEL</div>
-      <h2>Contact</h2>
-      <p class="sec-sub">Open to new opportunities. Send me a message.</p>
-    </div>
-
-    <div class="contact-grid">
-      <a class="cc" href="mailto:career.pyaephyohan@gmail.com">
-        <span class="cc-icon">✉</span>
-        <div class="cc-lbl">Email Channel</div>
-        <div class="cc-val cy">career.pyaephyohan@gmail.com</div>
-      </a>
-      <a class="cc" href="tel:+19299193097">
-        <span class="cc-icon">☎</span>
-        <div class="cc-lbl">Direct Line</div>
-        <div class="cc-val wh">+1 (929) 919-3097</div>
-      </a>
-      <div class="cc">
-        <span class="cc-icon">◎</span>
-        <div class="cc-lbl">Coordinates</div>
-        <div class="cc-val wh">Queens, New York 11373</div>
-      </div>
-      <div class="cc">
-        <span class="cc-icon">◈</span>
-        <div class="cc-lbl">Status</div>
-        <div class="cc-val wh">Open to Opportunities</div>
-        <div class="avail"><span class="avail-dot"></span>SYSTEM: AVAILABLE</div>
-      </div>
-    </div>
-
-    <!-- BIG TERMINAL OUTRO -->
-    <div class="big-term">
-      <div class="bt-bar">
-        <div class="tdot" style="background:#ff5f57"></div>
-        <div class="tdot" style="background:#ffbd2e"></div>
-        <div class="tdot" style="background:#28c840"></div>
-        <span class="term-title" style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:#333;letter-spacing:0.1em;margin:0 auto">pph@portfolio — ~/contact</span>
-      </div>
-      <div class="bt-body">
-        <span class="bt-dim"># ── READY TO COLLABORATE ──────────────────────────────────</span><br><br>
-        <span class="bt-prompt">pph@portfolio:~$</span> <span class="bt-cmd">echo "I am available for:"</span><br>
-        <span class="bt-out">→ <span class="bt-y">IT Support</span> &amp; Help Desk Roles</span><br>
-        <span class="bt-out">→ <span class="bt-y">Systems Engineering</span> Positions</span><br>
-        <span class="bt-out">→ <span class="bt-y">Azure Cloud</span> Administration</span><br>
-        <span class="bt-out">→ <span class="bt-y">Network &amp; Security</span> Operations</span><br>
-        <br>
-        <span class="bt-prompt">pph@portfolio:~$</span> <span class="bt-cmd">send-message --to career.pyaephyohan@gmail.com</span><br>
-        <span style="color:var(--green)">✓ Channel open. Awaiting your transmission...</span><br>
-        <br>
-        <span class="bt-prompt">pph@portfolio:~$</span> <span class="tcursor"></span>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-header">
+<div class="sec-eyebrow">// OPEN CHANNEL</div>
+<h2>Contact</h2>
+<p class="sec-sub">Open to new opportunities. Send me a message.</p>
+</div>
+<div class="contact-grid">
+<a class="cc" href="mailto:career.pyaephyohan@gmail.com">
+<span class="cc-icon">✉</span>
+<div class="cc-lbl">Email Channel</div>
+<div class="cc-val cy">career.pyaephyohan@gmail.com</div>
+</a>
+<div class="cc">
+<span class="cc-icon">◈</span>
+<div class="cc-lbl">Status</div>
+<div class="cc-val wh">Open to Opportunities</div>
+<div class="avail"><span class="avail-dot"></span>SYSTEM: AVAILABLE</div>
+</div>
+</div>
+<!-- BIG TERMINAL OUTRO -->
+<div class="big-term">
+<div class="bt-bar">
+<div class="tdot" style="background:#ff5f57"></div>
+<div class="tdot" style="background:#ffbd2e"></div>
+<div class="tdot" style="background:#28c840"></div>
+<span class="term-title" style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:#333;letter-spacing:0.1em;margin:0 auto">pph@portfolio — ~/contact</span>
+</div>
+<div class="bt-body">
+<span class="bt-dim"># ── READY TO COLLABORATE ──────────────────────────────────</span><br/><br/>
+<span class="bt-prompt">pph@portfolio:~$</span> <span class="bt-cmd">echo "I am available for:"</span><br/>
+<span class="bt-out">→ <span class="bt-y">IT Support</span> &amp; Help Desk Roles</span><br/>
+<span class="bt-out">→ <span class="bt-y">Systems Engineering</span> Positions</span><br/>
+<span class="bt-out">→ <span class="bt-y">Azure Cloud</span> Administration</span><br/>
+<span class="bt-out">→ <span class="bt-y">Network &amp; Security</span> Operations</span><br/>
+<br/>
+<span class="bt-prompt">pph@portfolio:~$</span> <span class="bt-cmd">send-message --to career.pyaephyohan@gmail.com</span><br/>
+<span style="color:var(--green)">✓ Channel open. Awaiting your transmission...</span><br/>
+<br/>
+<span class="bt-prompt">pph@portfolio:~$</span> <span class="tcursor"></span>
+</div>
+</div>
+</div>
 </section>
-
-
-
 </body>
 </html>
