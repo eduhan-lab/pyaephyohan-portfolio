@@ -1067,6 +1067,69 @@ nav{padding-left:var(--gutter)!important;padding-right:var(--gutter)!important}
 .stat{padding:1rem .75rem!important}
 .stat-n{font-size:1.6rem!important}
 @media(max-width:600px){.stats{width:calc(100% - 2.4rem)!important}}
+
+/* FINAL DESKTOP / LAPTOP POLISH — 2026 */
+:root{--gutter:max(1.5rem,calc((100vw - 1120px)/2))}
+html{scroll-padding-top:84px}
+nav{display:flex!important;gap:clamp(1rem,2vw,2rem)!important;justify-content:space-between!important}
+.brand-home{flex-shrink:0;display:inline-flex;align-items:center;color:#163f80;text-decoration:none;font-family:'Inter',Arial,sans-serif;font-size:1.22rem;font-weight:850;letter-spacing:-.065em;line-height:1}
+.brand-dot{color:#5682c9;font-size:1.45rem}
+.nav-links{gap:clamp(.8rem,1.8vw,1.8rem)!important;margin-left:auto;align-items:center}
+.nav-links a{white-space:nowrap}
+.nav-badge{white-space:nowrap;flex-shrink:0}
+.hero{grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr)!important;align-items:stretch}
+.hero-left,.hero-right{min-width:0}
+.hero-left{padding-top:clamp(2.4rem,4vw,3.7rem)!important;padding-bottom:clamp(2.4rem,4vw,3.7rem)!important;padding-right:clamp(1.4rem,2.5vw,3rem)!important}
+.hero-right{padding-top:2.3rem!important;padding-bottom:2.3rem!important;padding-left:clamp(1.25rem,2.2vw,2.5rem)!important}
+.name-block .glitch-name{font-size:clamp(1.55rem,2.9vw,2.9rem)!important;letter-spacing:-.045em!important}
+.hero-desc{color:#f0f5ff!important;font-size:.95rem!important;line-height:1.75!important}
+.hero-title-line{color:#e6f0ff!important}
+.hero-eyebrow{color:#d6e6ff!important}
+.terminal .term-body{font-size:.84rem!important;line-height:1.65!important}
+.terminal .to,.terminal .to .p,.terminal .to .y,.terminal .to .g{color:#c4ddff!important}
+.terminal .tc,.terminal .to .w{color:#fff!important}
+.terminal .tp{color:#a8d5ff!important}
+.cstrip-val{overflow-wrap:anywhere;min-width:0}
+.panel-head{flex-wrap:wrap}
+.panel-head .panel-period{max-width:100%;white-space:normal!important;text-align:right}
+#skills .skill-term .sk-row{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)!important}
+#skills .skill-term .sk-k,#skills .skill-term .sk-v{line-height:1.55!important}
+.wrap{width:100%;max-width:1180px!important}
+@media(max-width:1200px) and (min-width:961px){
+ .hero-left{padding-left:2rem!important}
+ .hero-right{padding-right:2rem!important}
+ .hero-tags{gap:.4rem!important}
+ .hero-tag{font-size:.68rem!important}
+ .nav-badge{font-size:.68rem!important}
+}
+@media(max-width:960px){
+ .hero{grid-template-columns:minmax(0,1fr)!important}
+ .hero-left{padding:3rem 2rem 2rem!important}
+ .hero-right{padding:1.2rem 2rem 2.5rem!important}
+ .name-block .glitch-name{font-size:clamp(1.8rem,5vw,3rem)!important}
+ nav{gap:1rem!important}
+ .nav-links{gap:.75rem!important}
+ .nav-badge{display:none!important}
+}
+@media(max-width:700px){
+ nav{height:auto!important;min-height:66px;flex-wrap:wrap;justify-content:center!important;padding:12px 1rem!important;gap:.65rem!important}
+ .brand-home{margin-right:auto}
+ .nav-links{margin-left:0;gap:.75rem!important;flex-wrap:wrap;justify-content:center}
+ .nav-links a{font-size:.7rem!important}
+ .hero{padding-top:92px!important}
+ .hero-left{padding:2.3rem 1.3rem 1.5rem!important}
+ .hero-right{padding:1rem 1.3rem 2rem!important}
+ .name-block .glitch-name{white-space:normal!important;font-size:clamp(1.7rem,6.5vw,2.6rem)!important}
+ .terminal .term-body{font-size:.74rem!important;overflow-x:auto}
+ .stats{margin-top:1rem!important}
+}
+@media(max-width:430px){
+ .hero{padding-top:110px!important}
+ .nav-links{gap:.55rem!important}
+ .nav-links a{font-size:.64rem!important}
+ .brand-home{font-size:1.1rem}
+}
+
 </style>
 </head>
 <body>
@@ -1075,7 +1138,8 @@ nav{padding-left:var(--gutter)!important;padding-right:var(--gutter)!important}
 <div class="grain"></div>
 <div class="scanline"></div>
 <!-- NAV -->
-<nav>
+<nav aria-label="Primary navigation">
+<a class="brand-home" href="#top" aria-label="Pyae Phyo Han — back to top">PPH<span class="brand-dot">.</span></a>
 <div class="nav-links">
 <a href="#experience">Experience</a>
 <a href="#skills">Skills</a>
@@ -1086,7 +1150,7 @@ nav{padding-left:var(--gutter)!important;padding-right:var(--gutter)!important}
 <div class="nav-badge">SYSTEM ONLINE</div>
 </nav>
 <!-- ══ HERO ══ -->
-<div class="hero" style="position:relative;z-index:2">
+<div class="hero" id="top" style="position:relative;z-index:2">
 <!-- WEB SVG -->
 <svg class="web-deco" fill="none" height="180" style="position:absolute;top:3rem;right:3rem;z-index:1" viewbox="0 0 180 180" width="180">
 <g stroke="rgba(0,247,255,1)" stroke-width="0.6">
