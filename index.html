@@ -977,6 +977,96 @@ footer{background:#123467!important;border-top:0!important}.ft-logo{background:n
 @media(max-width:600px){nav{overflow-x:auto!important}.nav-links{gap:.9rem!important}.hero-left{padding:2.6rem 1.3rem 1.5rem!important}.hero-right{padding:1rem 1.3rem 2rem!important}.name-block .glitch-name{font-size:clamp(1.4rem,6.3vw,2rem)!important}.hero-desc{font-size:.85rem!important}.hero-btns{flex-wrap:wrap!important}.skill-grid{grid-template-columns:1fr!important}.wrap{padding:0 1.2rem!important}.stat-l{font-size:.67rem!important}.stats{grid-template-columns:repeat(2,1fr)!important}.term-body{overflow-x:auto!important}.cuny-education{padding:1.2rem!important}.panel-head{padding:1rem!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
+
+/* ── ALIGNMENT FIXES ── */
+:root{--gutter:max(1.5rem,calc((100vw - 1084px)/2))}
+/* nav, hero and sections share the same left/right content edge */
+nav{padding-left:var(--gutter)!important;padding-right:var(--gutter)!important}
+.hero-left{padding-left:var(--gutter)!important;padding-right:3rem!important}
+.hero-right{padding-right:var(--gutter)!important;padding-left:2.5rem!important}
+.hero-desc{max-width:520px}
+.hero-btns{align-items:center}
+.btn-main,.btn-outline{display:inline-flex!important;align-items:center;justify-content:center;line-height:1.2;text-align:center}
+
+/* terminal titles centred between the dots and the right edge */
+.term-title,.bt-title{flex:1;text-align:center;margin:0!important;padding-right:52px}
+.bt-title{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#a9c4ee!important;letter-spacing:.06em}
+#skills .skill-term .stitle{margin-left:.5rem!important}
+.tdot{flex-shrink:0}
+
+/* terminal body: real indentation */
+.term-body .to{padding-left:1.25rem}
+.term-body .ind{padding-left:1.1rem}
+.certs-list{display:flex;flex-wrap:wrap;gap:.35rem 1.25rem}
+.tl:last-child{margin-bottom:0}
+
+/* contact strip in hero: icon / label / value in tidy columns */
+.cstrip-item{align-items:center!important}
+.cstrip-icon{width:20px!important;text-align:center}
+.cstrip-label{width:56px!important;flex-shrink:0}
+.cstrip-val{min-width:0;overflow-wrap:anywhere}
+
+/* stats: equal cells, centred content */
+.stat{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.stat-l{text-align:center}
+
+/* section headers centred and consistently spaced */
+.sec-header{text-align:center}
+.sec-header .sec-sub{margin:.75rem auto 0!important;max-width:560px}
+
+/* experience cards: equal height, header/body aligned */
+.panels-wrap{align-items:stretch}
+.panel{display:flex;flex-direction:column}
+.panel-body{flex:1}
+.panel-head{align-items:center!important}
+.panel-head .panel-role{flex:1;min-width:0}
+.panel-head .panel-period{white-space:nowrap;flex-shrink:0;line-height:1.4}
+.panel-loc{display:flex;flex-wrap:wrap;gap:.25rem 1rem;align-items:center}
+.panel-bullets li{align-items:baseline!important;gap:.6rem!important}
+.panel-bullets li::before{flex-shrink:0;width:.5rem;text-align:center;line-height:inherit!important;font-size:inherit!important}
+
+/* skills: consistent key / value rows, equal card heights */
+#skills .skill-grid{align-items:stretch}
+#skills .skill-term{display:flex;flex-direction:column}
+#skills .skill-term .st-body{flex:1}
+#skills .skill-term .sk-row{align-items:baseline!important}
+
+/* certifications: number and text aligned */
+.cert-grid{align-items:stretch}
+#certs .cert-card{align-items:center!important}
+#certs .cert-card .cert-num{width:2.2ch!important;text-align:center;align-self:center}
+#certs .cert-card > div:nth-child(2){flex:1;min-width:0}
+
+/* education */
+.cuny-education{align-items:center!important}
+.edu-chip{display:inline-flex!important;align-items:center;line-height:1.2}
+
+/* contact cards: same structure and height */
+.contact-grid{align-items:stretch}
+.cc{justify-content:flex-start;align-items:flex-start}
+.cc-icon{line-height:1}
+.cc-val{line-height:1.35;word-break:normal!important;overflow-wrap:anywhere}
+
+/* closing terminal */
+.bt-body{overflow-wrap:anywhere}
+.bt-dim{display:block;overflow:hidden;white-space:nowrap}
+
+@media(max-width:960px){
+  .hero-left{padding:3.2rem var(--gutter) 2rem!important}
+  .hero-right{padding:1rem var(--gutter) 2.5rem!important}
+  nav{padding-left:1.25rem!important;padding-right:1.25rem!important}
+}
+@media(max-width:600px){
+  .term-title,.bt-title{padding-right:0;font-size:.62rem}
+  #certs .cert-card{align-items:flex-start!important}
+  #certs .cert-card .cert-num{align-self:flex-start}
+}
+
+/* stats: compact, same width as the content below */
+.stats{max-width:calc(1084px - 0px)!important;width:calc(100% - 3rem)!important;margin:1.75rem auto!important;border:1px solid #d9e3f0!important;border-radius:10px!important;background:#fff!important;box-shadow:0 4px 15px rgba(23,48,91,.05)!important;overflow:hidden}
+.stat{padding:1rem .75rem!important}
+.stat-n{font-size:1.6rem!important}
+@media(max-width:600px){.stats{width:calc(100% - 2.4rem)!important}}
 </style>
 </head>
 <body>
@@ -1019,8 +1109,7 @@ footer{background:#123467!important;border-top:0!important}.ft-logo{background:n
 <div class="hero-title-line">// IT Support  ·  Systems Engineer  ·  Cloud Admin</div>
 <p class="hero-desc">
 <span class="c">root@pph:~$</span> whoami<br/>
-      IT professional with <span class="y">7+ years</span> across cloud, enterprise<br/>
-      infrastructure &amp; multi-OS environments.<br/>
+      IT professional with <span class="y">7+ years</span> across cloud, enterprise infrastructure &amp; multi-OS environments.<br/>
 <span class="g">Status: AVAILABLE</span>
 </p>
 <div class="hero-tags">
@@ -1048,28 +1137,28 @@ footer{background:#123467!important;border-top:0!important}.ft-logo{background:n
 <div class="term-body">
 <div class="tl">
 <span class="tp">pph@portfolio:~$</span><span class="tc"> cat identity.json</span>
-<div class="to">
-            {<br/>
-             <span class="y">"name"</span>: <span class="w">"Pyae Phyo Han"</span>,<br/>
-             <span class="y">"role"</span>: <span class="w">"Systems Engineer"</span>,<br/>
-             <span class="y">"xp"</span>: <span class="p">7</span>,<br/>
-             <span class="y">"status"</span>: <span class="g">"AVAILABLE"</span><br/>
-            }
+<div class="to json">
+<div>{</div>
+<div class="ind"><span class="y">"name"</span>: <span class="w">"Pyae Phyo Han"</span>,</div>
+<div class="ind"><span class="y">"role"</span>: <span class="w">"Systems Engineer"</span>,</div>
+<div class="ind"><span class="y">"xp"</span>: <span class="p">7</span>,</div>
+<div class="ind"><span class="y">"status"</span>: <span class="g">"AVAILABLE"</span></div>
+<div>}</div>
           </div>
 </div>
 <div class="tl">
 <span class="tp">pph@portfolio:~$</span><span class="tc"> ls certs/</span>
 <div class="to">
-<span class="p">MCSE_2016</span>  <span class="p">AZ-104</span>  <span class="p">SecOps</span>  <span class="p">Net+</span>
+<div class="certs-list"><span class="p">MCSE_2016</span><span class="p">AZ-104</span><span class="p">SecOps</span><span class="p">Net+</span></div>
 </div>
 </div>
 <div class="tl">
 <span class="tp">pph@portfolio:~$</span><span class="tc"> systemctl status career</span>
 <div class="to">
-            ● career.service — <span class="g">active (running)</span><br/>
-              Main PID: <span class="y">7+years</span><br/>
-              Current: <span class="w">BMCC · CUNY — Nov 2025–Present</span><br/>
-              Location: <span class="w">New York City, NY</span>
+<div>● career.service — <span class="g">active (running)</span></div>
+<div class="ind">Main PID: <span class="y">7+years</span></div>
+<div class="ind">Current: <span class="w">BMCC · CUNY — Nov 2025–Present</span></div>
+<div class="ind">Location: <span class="w">New York City, NY</span></div>
 </div>
 </div>
 <div class="tl">
@@ -1346,7 +1435,7 @@ footer{background:#123467!important;border-top:0!important}.ft-logo{background:n
 <div class="sec-header">
 <div class="sec-eyebrow">// EDUCATION</div>
 <h2>Education</h2>
-<p class="sec-sub" style="margin-bottom:2.5rem">Building on a strong academic foundation.</p>
+<p class="sec-sub">Building on a strong academic foundation.</p>
 </div>
 <div class="edu-wrap cuny-education">
 <div class="edu-details">
@@ -1385,7 +1474,7 @@ footer{background:#123467!important;border-top:0!important}.ft-logo{background:n
 <div class="tdot" style="background:#ff5f57"></div>
 <div class="tdot" style="background:#ffbd2e"></div>
 <div class="tdot" style="background:#28c840"></div>
-<span class="term-title" style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:#333;letter-spacing:0.1em;margin:0 auto">pph@portfolio — ~/contact</span>
+<span class="term-title bt-title">pph@portfolio — ~/contact</span>
 </div>
 <div class="bt-body">
 <span class="bt-dim"># ── READY TO COLLABORATE ──────────────────────────────────</span><br/><br/>
